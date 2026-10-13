@@ -2,5 +2,13 @@ services:
   web:
     image: ghcr.io/datacamp-palestine/zaytoun-data-harvest/web:${TAG}
     ports:
-      - "8090:80"
+      - "127.0.0.1:8090:80"
     restart: unless-stopped
+    networks:
+      edge:
+        aliases:
+          - zaytoun-web
+
+networks:
+  edge:
+    external: true
