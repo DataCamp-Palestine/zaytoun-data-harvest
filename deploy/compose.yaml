@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ghcr.io/datacamp-palestine/zaytoun-data-harvest/web:${TAG}
+    ports:
+      - "8080:80"
+    restart: unless-stopped
