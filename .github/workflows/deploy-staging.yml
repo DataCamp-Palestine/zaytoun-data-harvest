@@ -8,7 +8,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE: ghcr.io/${{ github.repository }}/web
+  IMAGE: ghcr.io/datacamp-palestine/zaytoun-data-harvest/web
 
 jobs:
   build:
